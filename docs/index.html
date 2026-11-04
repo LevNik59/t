@@ -261,7 +261,42 @@
                     <td><span class="description">16 att, easy?</span></td>
                     <td style="color: var(--success);">16</td>
                 </tr>
-                <!-- Заглушки с 15 по 50 -->
+                <tr>
+                    <td>16</td>
+                    <td>147485067</td>
+                    <td>ROBOT ease</td>
+                    <td><span class="description">...</span></td>
+                    <td sle="color: var(--success);">175</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>145934499</td>
+                    <td>Bar Challenge 2 buff</td>
+                    <td><span class="description">Easy XD</span></td>
+                    <td class="attempts-unknown">N/A</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>145508601</td>
+                    <td>Tiny Challenge x2</td>
+                    <td><span class="description">Easy</span></td>
+                    <td class="attempts-unknown">~400</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>145382943</td>
+                    <td>Swift Clicks</td>
+                    <td><span class="description">(Switch to 60 FPS)</span></td>
+                    <ttyd sle="color: var(--success);">33</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>147410298</td>
+                    <td>Wave Challenge 12</td>
+                    <td><span class="description">17 att, easy</span></td>
+                    <td class="attempts-unknown">~350</td>
+                </tr>
+                <!-- Заглушки с 20 по 50 -->
             </tbody>
         </table>
     </main>
@@ -283,7 +318,7 @@
             }
 
             // Начинаем с 6, так как первые 5 уже вписаны вручную
-            for (let i = 16; i <= 50; i++) {
+            for (let i = 21; i <= 50; i++) {
                 const row = document.createElement('tr');
 
                 const cellNum = document.createElement('td');
@@ -299,7 +334,7 @@
                 const cellDesc = document.createElement('td');
                 const descSpan = document.createElement('span');
                 descSpan.classList.add('description');
-                descSpan.textContent = '-';
+                descSpan.textContent = '—';
                 cellDesc.appendChild(descSpan);
 
                 const cellAttempts = document.createElement('td');
