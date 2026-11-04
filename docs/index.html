@@ -172,52 +172,52 @@
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>140808907</td>
-                    <td>Paracosm Challenge</td>
-                    <td><span class="description">Easy consistency challenge.</span></td>
-                    <td class="attempts-unknown">N/A</td>
-                </tr>
-                <tr>
-                    <td>4</td>
                     <td>147785411</td>
                     <td>NonStep Hardestest</td>
                     <td><span class="description">Hard</span></td>
                     <td class="attempts-unknown">N/A</td>
                 </tr>
                 <tr>
-                    <td>5</td>
+                    <td>4</td>
                     <td>146559505</td>
                     <td>Test n8</td>
                     <td><span class="description">Added ???</span></td>
                     <td class="attempts-unknown">~3 000</td>
                 </tr>
                 <tr>
-                    <td>6</td>
+                    <td>5</td>
                     <td>146632802</td>
                     <td>Just give up</td>
                     <td><span class="description">Very hard challenge verified by LevIpapa in 916 att.</span></td>
                     <td style="color: var(--success);">926</td>
                 </tr>
                 <tr>
-                    <td>7</td>
+                    <td>6</td>
                     <td>145382599</td>
                     <td>Spam Easy 2x2</td>
                     <td><span class="description">Easy, 6 att.</span></td>
                     <td style="color: var(--success);">16</td>
                 </tr>
                 <tr>
-                    <td>8</td>
+                    <td>7</td>
                     <td>110025969</td>
                     <td>OMG Challenge</td>
                     <td><span class="description">Easy :)</span></td>
                     <td class="attempts-unknown">~2 800</td>
                 </tr>
                 <tr>
-                    <td>9</td>
+                    <td>8</td>
                     <td>137760566</td>
                     <td>Red Chall</td>
                     <td><span class="description">Easy :D</span></td>
                     <td class="attempts-unknown">~200</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>140808907</td>
+                    <td>Paracosm Challenge</td>
+                    <td><span class="description">Easy consistency challenge.</span></td>
+                    <td class="attempts-unknown">N/A</td>
                 </tr>
                 <tr>
                     <td>10</td>
@@ -266,7 +266,7 @@
                     <td>147485067</td>
                     <td>ROBOT ease</td>
                     <td><span class="description">...</span></td>
-                    <td sle="color: var(--success);">175</td>
+                    <td style="color: var(--success);">175</td>
                 </tr>
                 <tr>
                     <td>17</td>
@@ -287,7 +287,7 @@
                     <td>145382943</td>
                     <td>Swift Clicks</td>
                     <td><span class="description">(Switch to 60 FPS)</span></td>
-                    <ttyd sle="color: var(--success);">33</td>
+                    <td style="color: var(--success);">33</td>
                 </tr>
                 <tr>
                     <td>20</td>
@@ -296,7 +296,6 @@
                     <td><span class="description">17 att, easy</span></td>
                     <td class="attempts-unknown">~350</td>
                 </tr>
-                <!-- Заглушки с 20 по 50 -->
             </tbody>
         </table>
     </main>
@@ -305,46 +304,6 @@
         <p>&copy; 2026 LPCL. Данные обновлены.</p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const tbody = document.getElementById('levels-body');
 
-            function generatePlaceholderText() {
-                const adjectives = ['No'];
-                const nouns = ['Level'];
-                const randomAdj = adjectives[Math.floor(Math.random() * adjectives.length)];
-                const randomNoun = nouns[Math.floor(Math.random() * nouns.length)];
-                return `${randomAdj} ${randomNoun}`;
-            }
-
-            // Начинаем с 6, так как первые 5 уже вписаны вручную
-            for (let i = 21; i <= 50; i++) {
-                const row = document.createElement('tr');
-
-                const cellNum = document.createElement('td');
-                cellNum.textContent = i;
-
-                const cellId = document.createElement('td');
-                const id = 0;
-                cellId.textContent = id;
-
-                const cellName = document.createElement('td');
-                cellName.textContent = `${generatePlaceholderText()}`;
-
-                const cellDesc = document.createElement('td');
-                const descSpan = document.createElement('span');
-                descSpan.classList.add('description');
-                descSpan.textContent = '—';
-                cellDesc.appendChild(descSpan);
-
-                const cellAttempts = document.createElement('td');
-                const attempts = 0
-                cellAttempts.textContent = attempts.toLocaleString();
-
-                row.append(cellNum, cellId, cellName, cellDesc, cellAttempts);
-                tbody.appendChild(row);
-            }
-        });
-    </script>
 </body>
 </html>
